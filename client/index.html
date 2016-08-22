@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<title>Standard App</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/bundle.css">
+</head>
+
+<body ng-controller="SharedController as shared">
+	<div class="container-fluid">
+		<section class="section section--1">
+			<div class="top-panel"></div>
+			<div class="container">	
+				<h2 class="section__title">New in legion</h2>
+			</div>
+			<div class="section__content">
+				<div class="section__bg">
+					<div class="container">
+						<p class="section__text">
+							Curabitur in eros vel enim malesuada euismod ut id libero. Aenean at gravida nisl, a vehicula leo. Vestibulum vel turpis vel lorem pulvinar pellentesque vel quis diam. Praesent et ligula ac quam feugiat imperdiet et sit amet libero. Maecenas sollicitudin est vel orci tincidunt commodo. Nunc nisi tellus, hendrerit at sagittis in, aliquam eu nunc.
+						</p>
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="section__subtitle">
+									<i class="symbol symbol--1"></i>
+									<span>Shattered Islands</span>
+								</h3>
+								<p class="section__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam consequat finibus. Morbi tellus quam, pretium sed urna in, tristique porta lectus. Curabitur nec tincidunt eros, at efficitur orci. In hac habitasse platea dictumst. Cras faucibus ex eget libero ornare, ac posuere tortor dapibus. Ut vulputate id enim in feugiat. Etiam ultrices semper eros in pretium. Mauris imperdiet vel enim quis ullamcorper. In hac habitasse platea dictumst. 
+								</p>
+								<p class="section__text">
+									Etiam id magna sapien. Quisque finibus elementum pulvinar. Vivamus purus neque, molestie gravida enim nec, cursus condimentum augue. Curabitur et libero eget ex pulvinar imperdiet ut a lorem. Praesent sed sapien imperdiet, consectetur nisl vel, mollis odio. Morbi tincidunt vitae nibh at sodales. Nunc vel quam ac neque tristique posuere vitae a nisl.
+								</p>
+								<h3 class="section__subtitle">
+									<i class="symbol symbol--2"></i>
+									<span>Better Rewards</span>
+								</h3>
+								<p class="section__text">
+									Integer tempus imperdiet tortor eget accumsan. Nullam feugiat eros eget commodo viverra. Donec tellus justo, dignissim eu egestas ac, sagittis nec libero. Etiam luctus iaculis venenatis. Morbi pharetra ut lacus malesuada placerat. Nullam pulvinar congue nulla quis sollicitudin. Nulla hendrerit scelerisque dolor nec malesuada. Mauris eget vehicula metus. Morbi tempor elit nibh, sit amet quam in mattis ut risus a sollicitudin.
+									<br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section class="section section--2">
+			<div class="top-panel"></div>
+			<div class="container">
+				<h2 class="section__title">Dungeons</h2>
+			</div>
+			<div class="section__content">
+				<div class="container">
+					<div class="thumbnails">
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-1.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-2.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-3.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-4.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-5.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-6.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-7.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-8.png" alt="alt">
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-9.png" alt="alt">
+							<i class="thumbnails__icon"></i>
+						</div>
+						<div ng-click="shared.selectItem($event)" item class="thumbnails__item">
+							<img src="resources/img/section-2/pic-10.png" alt="alt">
+							<i class="thumbnails__icon"></i>
+						</div>
+					</div>
+					<div class="section__bg">
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+								<img class="img-responsive section__boss" src="resources/img/section-2/boss.png" alt="alt">
+							</div>
+							<div class="col-sm-6 col-md-6">
+								<h3 class="section__subtitle">
+									<i class="symbol symbol--3"></i>
+									<span>Black Rook Hold</span>
+								</h3>
+								<p class="section__text">
+									Integer tempus imperdiet tortor eget accumsan. Nullam feugiat eros eget commodo viverra. Donec tellus justo, dignissim eu egestas ac, sagittis nec libero. Etiam luctus iaculis venenatis. Morbi pharetra ut lacus malesuada placerat. Nullam pulvinar congue nulla quis sollicitudin. Nulla hendrerit scelerisque dolor nec malesuada. Mauris eget vehicula metus. Morbi tempor elit nibh, sit amet quam in mattis ut risus a sollicitudin.
+								</p>
+								<h3 class="section__subtitle">
+									<i class="symbol symbol--4"></i>
+									<span>Encounters</span>
+								</h3>
+								<div class="labels">
+									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-1.png);"></div>
+									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-2.png);"></div>
+									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-3.png);"></div>
+									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-4.png);"></div>
+								</div>
+								<p class="section__text">
+									<span class="selected-text">Illysanna Ravencrest</span> – The daughter of Lord Ravencrest, imprisoned for millennia in the Vault of the Wardens shortly after the War of Ancients, found herself free after Maiev released the demon hunters from their prison. Returning to her ancestral home, she has sacrificed everything - including her very soul - to defend what she could not during the War of the Ancients.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="dist/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+.section--2
+
+	.top-panel
+		position absolute
+		top -230px
+		left 0
+		width 100%
+		height auto
+		min-height 640px
+		z-index 0
+		@extend .cover
+		background-image url(../resources/img/section-2/top-panel.png)
+
+	.section__title
+		position relative
+		top 160px
+
+	.section__content
+		position relative
+		top 140px
+
+	.section__bg
+		margin-top -20px
+		background-position -100px 0
+		@media all and (min-width: $phone)
+			background-image url(../resources/img/section-2/bg.png)	
+
+	.thumbnails
+		position relative
+		width 100%
+		height auto
+		min-height 177px
+		@extend .cover, .flex
+		justify-content center
+		padding 40px 0
+		@media all and (min-width: $phone)
+			background-image url(../resources/img/section-2/border.png)
+
+
+		&__item
+			position relative
+			width 100px
+			height 100px
+			margin 4px
+			background-image url(../resources/img/section-2/thumbnails-item.png)
+			@extend .flex
+			cursor pointer
+			user-select none
+			@media all and (min-width: $phone)
+				width 103px
+				height 103px
+
+			img
+				width 81px
+				height 81px
+
+
+		&__item.js-is-selected
+			&::before
+				content ''
+				position absolute
+				top -17px
+				left 0
+				width 103px
+				height 138px
+				background-image url(../resources/img/section-2/smoke.png)
+				z-index 10
+				@media all and (min-width: $phone)
+					left 2px
+
+
+		&__icon
+			position absolute
+			bottom 12px
+			right 12px
+			display inline-block
+			width 26px
+			height 30px
+			@extend .cover
+			background-image url(../resources/icons/skull.png)
+
+
+	.section__boss
+		margin-top 40px
+		@media all and (max-width: $phone)
+			display none
+		@media all and (min-width: $phone)
+			margin-left -100px
+
+
+	.labels
+		position relative
+		@extend .flex
+		justify-content flex-start
+		margin-bottom 35px
+
+		&__item
+			position relative
+			width 39px
+			height 39px
+			border-radius 50%
+			margin-right 20px
+			@extend .cover
+			cursor pointer
+
+
+		&__item.js-is-selected
+			&::before
+				content ''
+				position absolute
+				top 6px
+				width 39px
+				height 33px
+				background-image url(../resources/img/section-2/selected-label.png)
+				z-index 10

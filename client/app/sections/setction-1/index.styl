@@ -1,0 +1,20 @@
+
+
+.section--1
+	position relative
+	z-index 10
+
+	.section__bg
+		background-position 200px 0
+		@media all and (min-width: $laptop)
+			background-position 340px 0
+			background-image url(../resources/img/section-1/bg.png)
+		@media all and (min-width: 1600px)
+			min-height 1080px
+
+	.top-panel
+		width 100%
+		height auto
+		min-height 174px
+		@extend .cover
+		background-image url(../resources/img/section-1/top-panel.png)

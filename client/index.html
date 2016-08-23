@@ -232,11 +232,11 @@
 										<div class="board__title">Choose your faction:</div>
 										<div class="l-row">
 											<div class="l-radio">
-												<input type="radio" class="wow-radio" id="radio-1" name="radio-faction"/>
+												<input type="radio" class="wow-radio" id="radio-1" name="radio-faction-1"/>
 												<label for="radio-1" class="wow-radio-text">Alliance</label>
 											</div>
 											<div class="l-radio">
-												<input type="radio" class="wow-radio" id="radio-2" name="radio-faction"/>
+												<input type="radio" class="wow-radio" id="radio-2" name="radio-faction-1" checked/>
 												<label for="radio-2" class="wow-radio-text">Horde</label>
 											</div>
 										</div>
@@ -272,19 +272,19 @@
 										</div>
 										<div class="l-row">
 											<div class="l-radio">
-												<input type="radio" class="wow-radio" id="radio-3" name="radio-multiplier"/>
+												<input type="radio" class="wow-radio" id="radio-3" name="radio-multiplier-1" checked/>
 												<label for="radio-3" class="wow-radio-text">x1</label>
 											</div>
 											<div class="l-radio">
-												<input type="radio" class="wow-radio" id="radio-4" name="radio-multiplier"/>
+												<input type="radio" class="wow-radio" id="radio-4" name="radio-multiplier-1"/>
 												<label for="radio-4" class="wow-radio-text">x2</label>
 											</div>
 											<div class="l-radio">
-												<input type="radio" class="wow-radio" id="radio-5" name="radio-multiplier"/>
+												<input type="radio" class="wow-radio" id="radio-5" name="radio-multiplier-1"/>
 												<label for="radio-5" class="wow-radio-text">x3</label>
 											</div>
 											<div class="l-radio">
-												<input type="radio" class="wow-radio" id="radio-6" name="radio-multiplier"/>
+												<input type="radio" class="wow-radio" id="radio-6" name="radio-multiplier-1"/>
 												<label for="radio-6" class="wow-radio-text">x4</label>
 											</div>
 										</div>
@@ -461,6 +461,325 @@
 				
 			</div>
 		</section>
+		<section id="sec-4" class="section section--4">
+			<div class="container">
+				<h3 class="section__top-title">New challenges</h3>
+				<h2 class="section__title">Mythic+Difficulty</h2>
+			</div>
+			<div class="top-panel"></div>
+			<div class="section__content">
+				<div class="container">
+					<div class="section__bg">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="section__subtitle">
+									<i class="symbol symbol--1"></i>
+									<span>New high-level content</span>
+								</h3>
+								<p class="section__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam consequat finibus. Morbi tellus quam, pretium sed urna in, tristique porta lectus. Curabitur nec tincidunt eros, at efficitur orci. In hac habitasse platea dictumst. Cras faucibus ex eget libero ornare, ac posuere tortor dapibus. Ut vulputate id enim in feugiat. Etiam ultrices semper eros in pretium. Mauris imperdiet vel enim quis ullamcorper. In hac habitasse platea dictumst. 
+								</p>
+								<h3 class="section__subtitle">
+									<i class="symbol symbol--2"></i>
+									<span>Better Rewards</span>
+								</h3>
+								<p class="section__text">
+									Integer tempus imperdiet tortor eget accumsan. Nullam feugiat eros eget commodo viverra. Donec tellus justo, dignissim eu egestas ac, sagittis nec libero. Etiam luctus iaculis venenatis. Morbi pharetra ut lacus malesuada placerat. Nullam pulvinar congue nulla quis sollicitudin. Nulla hendrerit scelerisque dolor nec malesuada. Mauris eget vehicula metus. Morbi tempor elit nibh, sit amet quam in mattis ut risus a sollicitudin.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sec-5" class="section section--5">
+			<div class="top-panel"></div>
+			<div class="container">
+				<h2 class="section__title">Build your mythic+run</h2>
+				<div class="board">
+					<div class="row">
+						<div class="col-lg-4 col-lg-4--ovveride">								
+							<div class="board__control-group">
+								<div class="board__title">Do you have keystone?
+									<span class="wow-tooltip">
+										<span class="wow-tooltip__content">
+											Lorem ipsum dolor sit amet.
+										</span>
+									</span>
+								</div>
+								<div class="l-row">
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-7" name="radio-faction"/>
+										<label for="radio-7" class="wow-radio-text">Yes</label>
+									</div>
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-8" name="radio-faction" checked/>
+										<label for="radio-8" class="wow-radio-text">No</label>
+									</div>
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="board__title">What level of key you have?</div>
+								<div class="l-row">
+									<select class="wow-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="board__title">Your keystone dungeon:</div>
+								<div class="l-row">
+									<select class="wow-select">
+										<option value="Vault of the Wardens">Vault of the Wardens</option>
+										<option value="Option #2">Option #2</option>
+										<option value="Option #3">Option #3</option>
+										<option value="Option #4">Option #4</option>
+									</select>
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="board__title">Choose keystone level range:</div>
+								<div class="l-row">
+									<input type="text" class="wow-input" value="0">
+									<span class="divider">-</span>
+									<input type="text" class="wow-input" value="5">
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="board__title">Choose your faction:</div>
+								<div class="l-row">
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-9" name="radio-faction-2"/>
+										<label for="radio-9" class="wow-radio-text">Alliance</label>
+									</div>
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-10" name="radio-faction-2" checked/>
+										<label for="radio-10" class="wow-radio-text">Horde</label>
+									</div>
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="board__title">Сhoose tou class and spec:</div>
+								<div class="l-row">
+									<div class="l-radio">
+										<select class="wow-select">
+											<option value="Paladin">Paladin</option>
+											<option value="Option #2">Option #2</option>
+											<option value="Option #3">Option #3</option>
+											<option value="Option #4">Option #4</option>
+										</select>
+									</div>
+									<div class="l-radio">
+										<select class="wow-select">
+											<option value="Protection">Protection</option>
+											<option value="Option #2">Option #2</option>
+											<option value="Option #3">Option #3</option>
+											<option value="Option #4">Option #4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="board__title">Loot Multiplier: 
+									<span class="wow-tooltip">
+										<span class="wow-tooltip__content">
+											Lorem ipsum dolor sit amet.
+										</span>
+									</span>
+								</div>
+								<div class="l-row">
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-11" name="radio-multiplier-2" checked/>
+										<label for="radio-11" class="wow-radio-text">x1</label>
+									</div>
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-12" name="radio-multiplier-2"/>
+										<label for="radio-12" class="wow-radio-text">x2</label>
+									</div>
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-13" name="radio-multiplier-2"/>
+										<label for="radio-13" class="wow-radio-text">x3</label>
+									</div>
+									<div class="l-radio">
+										<input type="radio" class="wow-radio" id="radio-14" name="radio-multiplier-2"/>
+										<label for="radio-14" class="wow-radio-text">x4</label>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-8 col-lg-8--ovveride">
+							<div class="board__control-group">
+								<div class="board__title">
+									Shown <span>8</span> results of <span>26</span> available events:
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign wow-event__sign--green">Ready to Start!</div>
+										<div class="wow-event__element wow-event__sign text-clip">Best group in EU. 100500 Succesfull orders. </div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item"></div>
+											<div class="wow-event__indicator-item"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>		
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign wow-event__sign--green">Ready to Start!</div>
+										<div class="wow-event__element wow-event__sign">We are better than guys above.</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign wow-event__sign--green">Ready to Start!</div>
+										<div class="wow-event__element wow-event__sign">Top team. Will work for booze.</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign">Today, 8:00 PM</div>
+										<div class="wow-event__element wow-event__sign">Mommy says we are special!</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign">Today, 11:00 PM</div>
+										<div class="wow-event__element wow-event__sign">Experienced team. Fast and safe.</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item"></div>
+											<div class="wow-event__indicator-item"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign">Aug 21, 12:00 AM</div>
+										<div class="wow-event__element wow-event__sign">One of the best raiding teams in EU.</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item"></div>
+											<div class="wow-event__indicator-item"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign">Aug 21, 3:00 PM</div>
+										<div class="wow-event__element wow-event__sign">Killing bosses before it became mainstream.</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+								<div class="wow-event">
+									<div class="wow-event__item">
+										<i class="wow-event__element wow-event__icon-clock"></i>
+										<div class="wow-event__element wow-event__sign">Aug 22, 9:00 PM</div>
+										<div class="wow-event__element wow-event__sign">Totally thebest way to be prepared!</div>
+									</div>
+									<div class="wow-event__item">
+										<div class="wow-event__element wow-event__indicator">
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+											<div class="wow-event__indicator-item is-active"></div>
+										</div>
+										<div class="wow-event__element wow-event__sign">99.95€</div>
+										<button class="wow-event__btn">Buy</button>
+									</div>
+								</div>
+							</div>
+							<div class="board__control-group">
+								<div class="l-pagination">
+									<nav class="wow-pagination">
+										<ul class="wow-pagination__list">
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link wow-pagination__item-link--prev"></a>
+											</li>
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link is-active">1</a>
+											</li>
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link">2</a>
+											</li>
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link">3</a>
+											</li>
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link">...</a>
+											</li>
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link">6</a>
+											</li>
+											<li class="wow-pagination__item">
+												<a href="#" class="wow-pagination__item-link wow-pagination__item-link--next"></a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<nav class="wow-navigation">
 			<ul class="wow-navigation__list">
@@ -476,15 +795,15 @@
 					<span class="wow-navigation__list-label">Legion Dangeons Boost</span>
 					<span class="wow-navigation__list-circle">3</span>
 				</li>
-				<li class="wow-navigation__list-item">
+				<li ng-click="shared.navigateTo('#sec-4')" class="wow-navigation__list-item">
 					<span class="wow-navigation__list-label">New challenges</span>
 					<span class="wow-navigation__list-circle">4</span>
 				</li>
-				<li class="wow-navigation__list-item">
+				<li ng-click="shared.navigateTo('#sec-5')" class="wow-navigation__list-item">
 					<span class="wow-navigation__list-label">Build your mythic+run</span>
 					<span class="wow-navigation__list-circle">5</span>
 				</li>
-				<li class="wow-navigation__list-item">
+				<li ng-click="shared.navigateTo('#sec-6')" class="wow-navigation__list-item">
 					<span class="wow-navigation__list-label">Subscribe for more</span>
 					<span class="wow-navigation__list-circle">6</span>
 				</li>

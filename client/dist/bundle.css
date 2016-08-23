@@ -20,7 +20,9 @@
 .section--2 .labels__item,
 .section--3 .top-panel,
 .section--3 .wow-cards__bg,
-.section--3 .border-middle {
+.section--3 .border-middle,
+.section--4 .top-panel,
+.section--5 .top-panel {
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -442,6 +444,19 @@ a:focus {
   overflow: hidden;
   max-width: 340px;
 }
+.wow-input {
+  background-color: #000;
+  border: 1px solid #a2ff00;
+  border-top: 1px solid #65c101;
+  border-bottom: 1px solid #a2ff00;
+  width: 80px;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  padding: 6px 8px;
+}
+.wow-input:focus {
+  outline: none;
+}
 .wow-navigation {
   position: fixed;
   top: calc(50% - 111px);
@@ -609,14 +624,14 @@ a:focus {
   cursor: pointer;
 }
 .wow-select {
-  width: 125px;
+  width: auto;
   border-radius: 5px;
-  border: 1px solid #9aea00;
+  border: 1px solid #a2ff00;
   border-top: 1px solid #65c101;
-  border-bottom: 1px solid #9aea00;
+  border-bottom: 1px solid #a2ff00;
   background-color: #000;
   color: #fff;
-  padding: 9px 10px;
+  padding: 9px 30px 9px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -629,6 +644,7 @@ a:focus {
   line-height: 1;
   cursor: pointer;
   margin: 8px 0;
+  font-size: 1.6rem;
 }
 .wow-select:focus {
   outline: none;
@@ -986,4 +1002,51 @@ a:focus {
   .section--3 .col-lg-8--ovveride {
     width: 68%;
   }
+}
+@media all and (min-width: 1200px) {
+  .section--4 {
+    margin-top: 90px;
+  }
+}
+.section--4 .top-panel {
+  position: absolute;
+  margin-top: -70px;
+  width: 100%;
+  height: auto;
+  min-height: 96px;
+  z-index: 0;
+  background-image: url("../resources/img/section-4/top-panel.png");
+}
+.section--4 .section__bg {
+  padding-top: 40px;
+  background-position: 50px -47px;
+}
+@media all and (min-width: 640px) {
+  .section--4 .section__bg {
+    background-image: url("../resources/img/section-4/bg.png");
+  }
+}
+.section--5 {
+  margin-top: 40px;
+}
+@media all and (min-width: 1200px) {
+  .section--5 {
+    padding-top: 20px;
+  }
+}
+.section--5 .top-panel {
+  position: absolute;
+  margin-top: -120px;
+  width: 100%;
+  height: auto;
+  min-height: 96px;
+  z-index: 0;
+  background-image: url("../resources/img/section-5/top-panel.png");
+}
+.section--5 .board {
+  padding-top: 0;
+}
+.section--5 .divider {
+  margin: 0 10px;
+  color: #fff;
 }

@@ -1,0 +1,35 @@
+.wow-radio
+	margin 0 13px 2px 0
+	cursor pointer
+
+	&:not(checked)
+		position absolute
+		opacity 0
+
+	&:not(checked) + label
+		position relative
+		padding 0 0 0 30px
+
+	&:not(checked) + label:before
+		content ''
+		position absolute
+		top 3px
+		left 0
+		width 15px
+		height 15px
+		box-shadow 0 0 8px #b4ff00
+		background-color #000
+		border-radius 50%
+		border 1px solid #b4ff00
+		@extend .cover
+
+	&:checked + label:before
+		background-image url(../resources/img/components/radio/marker.png)
+
+.wow-radio-text
+	margin 1px 0 0 0
+	font-size 1.8rem
+	font-family 'LatoLatinWebLight'
+	font-weight normal
+	user-select none
+	cursor pointer

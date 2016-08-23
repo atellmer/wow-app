@@ -124,7 +124,7 @@
 			</div>
 		</section>
 
-		<section class="section section--3">
+		<section ng-controller="Section3Controller as section3" class="section section--3">
 			<div class="top-panel"></div>	
 			<div class="section__content">
 				<div class="section__bg section__bg--1">
@@ -134,9 +134,48 @@
 					</div>
 					<div class="container">
 						<div class="wow-cards">
-							<div class="wow-cards__item"></div>
-							<div class="wow-cards__item"></div>
-							<div class="wow-cards__item"></div>
+							<div item class="wow-cards__item">
+								<div class="wow-cards__bg wow-cards__bg--1">
+									<div class="wow-cards__title">Normal</div>
+								</div>
+								<ul class="wow-cards__list">
+									<li class="wow-cards__list-item">Normal Difficulty</li>
+									<li class="wow-cards__list-item">Requirements: 103-110 lvl</li>
+									<li class="wow-cards__list-item">Rewards: 760-810 ilvl</li>
+								</ul>
+								<div class="l-btn">
+									<button ng-click="section3.selectItem($event)" class="wow-btn">Select</button>
+								</div>
+								<div class="wow-cards__sign"><span>15</span> Events Available</div>
+							</div>
+							<div item class="wow-cards__item">
+								<div class="wow-cards__bg wow-cards__bg--2">
+									<div class="wow-cards__title">Heroic</div>
+								</div>
+								<ul class="wow-cards__list">
+									<li class="wow-cards__list-item">Heroic Difficulty</li>
+									<li class="wow-cards__list-item">Requirements: 110 lvl</li>
+									<li class="wow-cards__list-item">Rewards: 825 ilvl</li>
+								</ul>
+								<div class="l-btn">
+									<button ng-click="section3.selectItem($event)" class="wow-btn">Select</button>
+								</div>
+								<div class="wow-cards__sign"><span>36</span> Events Available</div>
+							</div>
+							<div item class="wow-cards__item">
+								<div class="wow-cards__bg wow-cards__bg--3">
+									<div class="wow-cards__title">Mythic</div>
+								</div>
+								<ul class="wow-cards__list">
+									<li class="wow-cards__list-item">Mythic Difficulty</li>
+									<li class="wow-cards__list-item">Requirements: 110 lvl</li>
+									<li class="wow-cards__list-item">Rewards: 840 ilvl</li>
+								</ul>
+								<div class="l-btn">
+									<button ng-click="section3.selectItem($event)" class="wow-btn">Select</button>
+								</div>
+								<div class="wow-cards__sign"><span>11</span> Events Available</div>
+							</div>
 						</div>
 						<h2 class="section__title">Step 2. Select Option and event</h2>
 						<div class="border-middle"></div>

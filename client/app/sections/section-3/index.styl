@@ -1,0 +1,59 @@
+.section--3
+
+	.top-panel
+		position absolute
+		margin-top -90px
+		width 100%
+		height auto
+		min-height 96px
+		z-index 0
+		@extend .cover
+		background-image url(../resources/img/section-3/top-panel.png)
+
+
+	.section__bg
+
+		&--1
+			padding-top 66px
+			min-height 835px
+			@media all and (min-width: $phone)
+				background-image url(../resources/img/section-3/bg-1.png)	
+		&--2
+			min-height 720px
+			@media all and (min-width: $phone)
+				background-image url(../resources/img/section-3/bg-2.png)	
+
+
+	.section__title
+		@media all and (min-width: $phone)
+			font-size 4rem
+
+	.wow-cards
+		@extend .flex
+		margin-bottom 40px
+		@media all and (min-width: $desktop)
+			justify-content space-between
+
+
+	.wow-cards__item
+		width 100%
+		height auto
+		min-height 500px
+		background-color #000
+		margin 5px
+		border 1px solid $p-color
+		@media all and (min-width: $phone)
+			width 340px
+			min-height 500px
+
+
+	.border-middle
+		position absolute
+		margin-top -84px
+		left 0
+		width 100%
+		height auto
+		min-height 96px
+		z-index 0
+		@extend .cover
+		background-image url(../resources/img/section-3/border-middle.png)

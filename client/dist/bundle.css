@@ -8,16 +8,16 @@
 .section .symbol,
 .wow-btn,
 .wow-checkbox:not(checked) + label:before,
-.event__icon-clock,
-.event__btn,
-.event__indicator-item,
+.wow-event__icon-clock,
+.wow-event__btn,
+.wow-event__indicator-item,
 .wow-radio:not(checked) + label:before,
 .wow-tooltip,
+.section--1 .top-panel,
 .section--2 .top-panel,
 .section--2 .thumbnails,
 .section--2 .thumbnails__icon,
 .section--2 .labels__item,
-.section--1 .top-panel,
 .section--3 .top-panel,
 .section--3 .wow-cards__bg,
 .section--3 .border-middle {
@@ -30,9 +30,9 @@
 .flex,
 .section .l-radio,
 .section .l-row,
-.event,
-.event__item,
-.event__indicator,
+.wow-event,
+.wow-event__item,
+.wow-event__indicator,
 .section--2 .thumbnails,
 .section--2 .thumbnails__item,
 .section--2 .labels,
@@ -296,7 +296,7 @@ a:focus {
   user-select: none;
   cursor: pointer;
 }
-.event {
+.wow-event {
   width: 100%;
   height: auto;
   min-height: 55px;
@@ -324,7 +324,7 @@ a:focus {
   border: 1px solid #b4ff00;
 }
 @media all and (min-width: 1200px) {
-  .event {
+  .wow-event {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     -o-box-orient: horizontal;
@@ -339,7 +339,7 @@ a:focus {
     border: 0;
   }
 }
-.event__item {
+.wow-event__item {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -o-box-orient: vertical;
@@ -357,7 +357,7 @@ a:focus {
   justify-content: space-between;
 }
 @media all and (min-width: 1200px) {
-  .event__item {
+  .wow-event__item {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     -o-box-orient: horizontal;
@@ -369,19 +369,19 @@ a:focus {
     flex-flow: row wrap;
   }
 }
-.event__icon-clock {
+.wow-event__icon-clock {
   display: inline-block;
   width: 19px;
   height: 19px;
   background-image: url("../resources/img/components/event/clock.png");
 }
-.event__sign {
+.wow-event__sign {
   font-size: 1.6rem;
 }
-.event__sign--green {
+.wow-event__sign--green {
   color: #9aea00;
 }
-.event__btn {
+.wow-event__btn {
   padding: 5px 34px;
   border: 0;
   text-transform: uppercase;
@@ -389,17 +389,17 @@ a:focus {
   background-image: url("../resources/img/components/event/button.png");
   margin-top: -3px;
 }
-.event__btn:focus {
+.wow-event__btn:focus {
   outline: none;
 }
-.event__btn:active {
+.wow-event__btn:active {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
-.event__indicator {
+.wow-event__indicator {
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -o-box-pack: justify;
@@ -407,25 +407,25 @@ a:focus {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.event__indicator-item {
+.wow-event__indicator-item {
   width: 9px;
   height: 20px;
   margin: 0 1px;
   background-image: url("../resources/img/components/event/man.png");
 }
-.event__indicator-item.is-active {
+.wow-event__indicator-item.is-active {
   background-image: url("../resources/img/components/event/man-g.png");
 }
-.event__element {
+.wow-event__element {
   margin-bottom: 10px;
   margin-right: 10px;
 }
 @media all and (min-width: 1200px) {
-  .event__element {
+  .wow-event__element {
     margin-bottom: 0;
   }
 }
-.event .text-clip {
+.wow-event .text-clip {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -541,6 +541,30 @@ a:focus {
     left: 15px;
     border-radius: 0 10px 10px 10px;
   }
+}
+.section--1 {
+  position: relative;
+  z-index: 10;
+}
+.section--1 .section__bg {
+  background-position: 200px 0;
+}
+@media all and (min-width: 1024px) {
+  .section--1 .section__bg {
+    background-position: 340px 0;
+    background-image: url("../resources/img/section-1/bg.png");
+  }
+}
+@media all and (min-width: 1600px) {
+  .section--1 .section__bg {
+    min-height: 1080px;
+  }
+}
+.section--1 .top-panel {
+  width: 100%;
+  height: auto;
+  min-height: 174px;
+  background-image: url("../resources/img/section-1/top-panel.png");
 }
 .section--2 .top-panel {
   position: absolute;
@@ -669,30 +693,6 @@ a:focus {
   height: 33px;
   background-image: url("../resources/img/section-2/selected-label.png");
   z-index: 10;
-}
-.section--1 {
-  position: relative;
-  z-index: 10;
-}
-.section--1 .section__bg {
-  background-position: 200px 0;
-}
-@media all and (min-width: 1024px) {
-  .section--1 .section__bg {
-    background-position: 340px 0;
-    background-image: url("../resources/img/section-1/bg.png");
-  }
-}
-@media all and (min-width: 1600px) {
-  .section--1 .section__bg {
-    min-height: 1080px;
-  }
-}
-.section--1 .top-panel {
-  width: 100%;
-  height: auto;
-  min-height: 174px;
-  background-image: url("../resources/img/section-1/top-panel.png");
 }
 .section--3 .top-panel {
   position: absolute;

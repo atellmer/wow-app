@@ -305,8 +305,8 @@ a:focus {
 .wow-event {
   width: 100%;
   height: auto;
-  min-height: 55px;
-  margin-bottom: 16px;
+  min-height: 53px;
+  margin-bottom: 20px;
   background-color: #000;
   border-radius: 7px;
   background-repeat: no-repeat;
@@ -394,6 +394,10 @@ a:focus {
   text-shadow: 0 0 6px #fff;
   background-image: url("../resources/img/components/event/button.png");
   margin-top: -3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .wow-event__btn:focus {
   outline: none;

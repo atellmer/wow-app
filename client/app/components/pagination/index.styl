@@ -1,0 +1,57 @@
+.wow-pagination
+	margin 20px 0
+
+	&__list
+		list-style-type none
+		@extend .flex
+		padding 0
+		margin 0
+
+	&__item
+		margin 0 10px
+		font-size 1.6rem
+		
+	&__item-link
+		color #fff
+		font-size 1.5rem
+		font-family 'LatoLatinWebLight'
+		@extend .transition, .flex
+		&:hover
+			color #fff
+			
+		&--prev
+			&:before
+				content ''
+				display inline-block
+				width 30px
+				height 30px
+				border-radius 3px
+				border 1px solid $p-color
+				border-top 1px solid #65c101
+				border-bottom 1px solid $p-color
+				background-repeat no-repeat
+				background-position center
+				background-image url(../resources/img/components/pagination/back.png)
+		&--next
+			&:after
+				content ''
+				display inline-block
+				width 30px
+				height 30px
+				border-radius 3px
+				border 1px solid $p-color
+				border-top 1px solid #65c101
+				border-bottom 1px solid $p-color
+				background-repeat no-repeat
+				background-position center
+				background-image url(../resources/img/components/pagination/next.png)
+
+	&__item-link.is-active
+		padding 3px 9px
+		color $p-color
+		border-radius 3px
+		border 1px solid $p-color
+		border-top 1px solid #65c101
+		border-bottom 1px solid $p-color
+		&:hover
+			color $p-color

@@ -1,0 +1,50 @@
+.wow-navigation
+	position fixed
+	top calc(50% - 111px)
+	right 30px
+	z-index 11
+	color $p-color
+	@media all and (max-width: 1250px)
+		display none
+
+	&__list
+		list-style none
+		padding 0
+
+	&__list-item
+		@extend .flex
+		justify-content flex-end
+		text-transform uppercase
+		margin-bottom 16px
+		font-size 1.7rem
+		cursor pointer
+		font-family 'LatoLatinWebMedium'
+		&:hover
+			.wow-navigation__list-label
+				position relative
+				visibility visible
+				opacity 1
+
+	&__list-label
+		position absolute
+		visibility hidden
+		opacity 0
+		display block
+		margin-right 10px
+		text-align right
+		@supports(-webkit-background-clip: text)
+			background linear-gradient(#ccff00, #00C853)
+			-webkit-background-clip text
+			color transparent
+
+	&__list-circle
+		@extend .flex
+		width 28px
+		height 28px
+		border 1px solid $p-color
+		border-radius 50%
+
+		&--up
+			background-repeat no-repeat
+			background-position center
+			background-image url(../resources/img/components/navigation/up.png)

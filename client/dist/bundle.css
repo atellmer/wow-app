@@ -33,12 +33,17 @@
 .wow-event,
 .wow-event__item,
 .wow-event__indicator,
+.wow-navigation__list-item,
+.wow-navigation__list-circle,
+.wow-pagination__list,
+.wow-pagination__item-link,
 .section--2 .thumbnails,
 .section--2 .thumbnails__item,
 .section--2 .labels,
 .section--3 .wow-cards,
 .section--3 .wow-cards__bg,
-.section--3 .l-btn {
+.section--3 .l-btn,
+.section--3 .l-pagination {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -68,6 +73,7 @@
   align-items: center;
 }
 .transition,
+.wow-pagination__item-link,
 .wow-tooltip__content {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -432,6 +438,131 @@ a:focus {
   overflow: hidden;
   max-width: 340px;
 }
+.wow-navigation {
+  position: fixed;
+  top: calc(50% - 111px);
+  right: 30px;
+  z-index: 11;
+  color: #9aea00;
+}
+@media all and (max-width: 1250px) {
+  .wow-navigation {
+    display: none;
+  }
+}
+.wow-navigation__list {
+  list-style: none;
+  padding: 0;
+}
+.wow-navigation__list-item {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-family: 'LatoLatinWebMedium';
+}
+.wow-navigation__list-item:hover .wow-navigation__list-label {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.wow-navigation__list-label {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  display: block;
+  margin-right: 10px;
+  text-align: right;
+}
+@supports (-webkit-background-clip: text) {
+  .wow-navigation__list-label {
+    background: -webkit-linear-gradient(#cf0, #00c853);
+    background: -moz-linear-gradient(#cf0, #00c853);
+    background: -o-linear-gradient(#cf0, #00c853);
+    background: -ms-linear-gradient(#cf0, #00c853);
+    background: linear-gradient(#cf0, #00c853);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+.wow-navigation__list-circle {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #9aea00;
+  border-radius: 50%;
+}
+.wow-navigation__list-circle--up {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../resources/img/components/navigation/up.png");
+}
+.wow-pagination {
+  margin: 20px 0;
+}
+.wow-pagination__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.wow-pagination__item {
+  margin: 0 10px;
+  font-size: 1.6rem;
+}
+.wow-pagination__item-link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'LatoLatinWebLight';
+}
+.wow-pagination__item-link:hover {
+  color: #fff;
+}
+.wow-pagination__item-link--prev:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #9aea00;
+  border-top: 1px solid #65c101;
+  border-bottom: 1px solid #9aea00;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../resources/img/components/pagination/back.png");
+}
+.wow-pagination__item-link--next:after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #9aea00;
+  border-top: 1px solid #65c101;
+  border-bottom: 1px solid #9aea00;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../resources/img/components/pagination/next.png");
+}
+.wow-pagination__item-link.is-active {
+  padding: 3px 9px;
+  color: #9aea00;
+  border-radius: 3px;
+  border: 1px solid #9aea00;
+  border-top: 1px solid #65c101;
+  border-bottom: 1px solid #9aea00;
+}
+.wow-pagination__item-link.is-active:hover {
+  color: #9aea00;
+}
 .wow-radio {
   margin: 0 13px 2px 0;
   cursor: pointer;
@@ -476,9 +607,9 @@ a:focus {
 .wow-select {
   width: 125px;
   border-radius: 5px;
-  border: 1px solid #aeff00;
+  border: 1px solid #9aea00;
   border-top: 1px solid #65c101;
-  border-bottom: 1px solid #aeff00;
+  border-bottom: 1px solid #9aea00;
   background-color: #000;
   color: #fff;
   padding: 9px 10px;

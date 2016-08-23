@@ -12,6 +12,7 @@
 		var vm = this;
 
 		vm.selectItem = selectItem;
+		vm.navigateTo = navigateTo;
 		
 
 		activate();
@@ -26,6 +27,11 @@
 				target = target.closest('[item]');
 			}
 			angular.element(target).toggleClass('js-is-selected');
+		}
+
+		function navigateTo(id) {
+			var top = $(id).offset().top;
+        	$('body,html').animate({scrollTop: top}, 700);
 		}
 	}
 })();

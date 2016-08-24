@@ -11,13 +11,12 @@
 
 <body ng-controller="SharedController as shared" id="top">
 	<div class="container-fluid">
+
 		<header class="header">	
 			<div class="top-panel">
 				<div class="logo"></div>
 			</div>
-			<div class="section__bg">
-
-			</div>
+			<div class="section__bg"></div>
 		</header>
 
 		<section id="sec-1" class="section section--1">
@@ -101,12 +100,11 @@
 							<i class="thumbnails__icon"></i>
 						</div>
 					</div>
-					<div class="section__bg">
+				</div>
+				<div class="section__bg">
+					<div class="container">
 						<div class="row">
-							<div class="col-sm-6 col-md-6">
-								<img class="img-responsive section__boss" src="resources/img/section-2/boss.png" alt="alt">
-							</div>
-							<div class="col-sm-6 col-md-6">
+							<div class="col-md-offset-6 col-md-6">
 								<h3 class="section__subtitle">
 									<i class="symbol symbol--3"></i>
 									<span>Black Rook Hold</span>
@@ -126,6 +124,13 @@
 								</div>
 								<p class="section__text">
 									<span class="selected-text">Illysanna Ravencrest</span> – The daughter of Lord Ravencrest, imprisoned for millennia in the Vault of the Wardens shortly after the War of Ancients, found herself free after Maiev released the demon hunters from their prison. Returning to her ancestral home, she has sacrificed everything - including her very soul - to defend what she could not during the War of the Ancients.
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
 								</p>
 							</div>
 						</div>
@@ -468,8 +473,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				
+					<div class="border-middle"></div>
+				</div>	
 			</div>
 		</section>
 
@@ -480,8 +485,8 @@
 			</div>
 			<div class="top-panel"></div>
 			<div class="section__content">
-				<div class="container">
-					<div class="section__bg">
+				<div class="section__bg">
+					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
 								<h3 class="section__subtitle">
@@ -497,6 +502,11 @@
 								</h3>
 								<p class="section__text">
 									Integer tempus imperdiet tortor eget accumsan. Nullam feugiat eros eget commodo viverra. Donec tellus justo, dignissim eu egestas ac, sagittis nec libero. Etiam luctus iaculis venenatis. Morbi pharetra ut lacus malesuada placerat. Nullam pulvinar congue nulla quis sollicitudin. Nulla hendrerit scelerisque dolor nec malesuada. Mauris eget vehicula metus. Morbi tempor elit nibh, sit amet quam in mattis ut risus a sollicitudin.
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
 								</p>
 							</div>
 						</div>
@@ -532,9 +542,9 @@
 								</div>
 							</div>
 							<div class="board__control-group">
-								<div class="board__title">What level of key you have?</div>
-								<div class="l-row">
-									<select class="wow-select">
+								<div class="board__title is-disabled">What level of key you have?</div>
+								<div class="l-row control-is-disabled">
+									<select class="wow-select" disabled>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
@@ -543,9 +553,9 @@
 								</div>
 							</div>
 							<div class="board__control-group">
-								<div class="board__title">Your keystone dungeon:</div>
-								<div class="l-row">
-									<select class="wow-select">
+								<div class="board__title is-disabled">Your keystone dungeon:</div>
+								<div class="l-row control-is-disabled">
+									<select class="wow-select" disabled>
 										<option value="Vault of the Wardens">Vault of the Wardens</option>
 										<option value="Option #2">Option #2</option>
 										<option value="Option #3">Option #3</option>
@@ -826,6 +836,7 @@
 				
 			</ul>
 		</nav>
+
 	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>

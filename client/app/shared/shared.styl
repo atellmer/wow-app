@@ -41,6 +41,14 @@ a
 	&:hover, &:active, &:focus
 		outline none
 		text-decoration none
+
+::selection
+	background-color $p-color
+	color #fff
+	
+::-moz-selection
+	background-color $p-color
+	color #fff
 		
 .container-fluid
 	padding 0
@@ -153,6 +161,10 @@ a
 			span 
 				color #9aea00 
 
+		&__title.is-disabled
+			color #595959
+			user-select none
+
 		&__control-group
 			margin-bottom 28px
 
@@ -167,5 +179,43 @@ a
 	.l-row
 		@extend .flex
 		justify-content flex-start
+
+	.control-is-disabled
+
+		.wow-select
+			border 1px solid #595959
+			color #595959
+			background-image url(../resources/img/components/select/marker-g.png)
+			cursor default
+
+		.wow-input
+			border 1px solid #595959
+			color #595959
+
+		.divider
+			color #595959
+
+		.wow-radio
+			&:not(checked) + label:before
+				border 1px solid #595959
+				box-shadow none
+				cursor default
+
+			&:checked + label:before
+				background-image url(../resources/img/components/radio/marker-g.png)
+
+		.wow-radio-text
+			color #595959
+			cursor default
+
+		.wow-checkbox
+			&:not(checked) + label:before
+				border 1px solid #595959
+				box-shadow none
+				cursor default
+
+		.wow-checkbox-label
+			color #595959
+			cursor default
 
 

@@ -1,0 +1,22 @@
+.footer
+	position relative
+
+	.top-panel
+		position absolute
+		width 100%
+		height auto
+		min-height 85px
+		z-index 0
+		@extend .cover
+		background-position 52.5% 0
+		background-image url(../resources/img/footer/top-panel.png)
+		@media all and (min-width: $phone)
+			background-position 55% 0
+
+	.section__bg
+		width 100%
+		height auto
+		min-height 100px
+		background-color #000
+		@media all and (min-width: $laptop)
+			min-height 630px

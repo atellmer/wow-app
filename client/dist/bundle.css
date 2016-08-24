@@ -13,6 +13,7 @@
 .wow-event__indicator-item,
 .wow-radio:not(checked) + label:before,
 .wow-tooltip,
+.footer .top-panel,
 .header .top-panel,
 .header .logo,
 .section--1 .top-panel,
@@ -856,6 +857,34 @@ a:focus {
     border-radius: 0 10px 10px 10px;
   }
 }
+.footer {
+  position: relative;
+}
+.footer .top-panel {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 85px;
+  z-index: 0;
+  background-position: 52.5% 0;
+  background-image: url("../resources/img/footer/top-panel.png");
+}
+@media all and (min-width: 640px) {
+  .footer .top-panel {
+    background-position: 55% 0;
+  }
+}
+.footer .section__bg {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background-color: #000;
+}
+@media all and (min-width: 1024px) {
+  .footer .section__bg {
+    min-height: 630px;
+  }
+}
 .header {
   position: relative;
 }
@@ -1184,6 +1213,9 @@ a:focus {
   .section--3 .col-lg-8--ovveride {
     width: 68%;
   }
+}
+.section--4 {
+  margin-top: 50px;
 }
 @media all and (min-width: 1200px) {
   .section--4 {

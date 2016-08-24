@@ -13,9 +13,9 @@
 .wow-event__indicator-item,
 .wow-radio:not(checked) + label:before,
 .wow-tooltip,
-.footer .top-panel,
 .header .top-panel,
 .header .logo,
+.footer .top-panel,
 .section--1 .top-panel,
 .section--2 .top-panel,
 .section--2 .thumbnails,
@@ -857,34 +857,6 @@ a:focus {
     border-radius: 0 10px 10px 10px;
   }
 }
-.footer {
-  position: relative;
-}
-.footer .top-panel {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  min-height: 85px;
-  z-index: 0;
-  background-position: 52.5% 0;
-  background-image: url("../resources/img/footer/top-panel.png");
-}
-@media all and (min-width: 640px) {
-  .footer .top-panel {
-    background-position: 55% 0;
-  }
-}
-.footer .section__bg {
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  background-color: #000;
-}
-@media all and (min-width: 1024px) {
-  .footer .section__bg {
-    min-height: 630px;
-  }
-}
 .header {
   position: relative;
 }
@@ -920,6 +892,34 @@ a:focus {
   width: 123px;
   height: 81px;
   background-image: url("../resources/img/header/logo.png");
+}
+.footer {
+  position: relative;
+}
+.footer .top-panel {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 85px;
+  z-index: 0;
+  background-position: 52.5% 0;
+  background-image: url("../resources/img/footer/top-panel.png");
+}
+@media all and (min-width: 640px) {
+  .footer .top-panel {
+    background-position: 55% 0;
+  }
+}
+.footer .section__bg {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background-color: #000;
+}
+@media all and (min-width: 1024px) {
+  .footer .section__bg {
+    min-height: 630px;
+  }
 }
 .section--1 {
   position: relative;
@@ -958,11 +958,16 @@ a:focus {
 }
 .section--2 .section__bg {
   margin-top: -19px;
+  background-position: center;
 }
 @media all and (min-width: 640px) {
-  .section--2 .section__bg {
-    background-position: center;
-    background-image: url("../resources/img/section-2/bg.png");
+  .section--2 .section__bg--1 {
+    background-image: url("../resources/img/section-2/backgrounds/bg-1.png");
+  }
+}
+@media all and (min-width: 992px) {
+  .section--2 .boss {
+    margin-top: 100px;
   }
 }
 .section--2 .thumbnails {

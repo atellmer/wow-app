@@ -21,9 +21,15 @@
 
 	.section__bg
 		margin-top -19px
-		@media all and (min-width: $phone)
-			background-position center
-			background-image url(../resources/img/section-2/bg.png)	
+		background-position center
+
+		&--1
+			@media all and (min-width: $phone)
+				background-image url(../resources/img/section-2/backgrounds/bg-1.png)
+
+	.boss
+		@media all and (min-width: 992px)
+			margin-top 100px
 
 	.thumbnails
 		position relative

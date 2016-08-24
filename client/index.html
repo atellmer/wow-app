@@ -59,7 +59,7 @@
 			</div>	
 		</section>
 
-		<section id="sec-2" class="section section--2">
+		<section ng-controller="Section2Controller as section2" id="sec-2" class="section section--2">
 			<div class="top-panel"></div>
 			<div class="container">
 				<h2 class="section__title">Dungeons</h2>
@@ -101,10 +101,24 @@
 						</div>
 					</div>
 				</div>
-				<div class="section__bg">
+				<div class="section__bg section__bg--1">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-offset-6 col-md-6">
+							<div class="col-md-6">
+								<div ng-if="section2.activeBoss.id === 0">
+									<img src="resources/img/section-2/bosses/boss-0.png" class="img-responsive boss" alt="alt">
+								</div>
+								<div ng-if="section2.activeBoss.id == 1">
+									<img src="resources/img/section-2/bosses/boss-1.png" class="img-responsive boss" alt="alt">
+								</div>
+								<div ng-if="section2.activeBoss.id == 2">
+									<img src="resources/img/section-2/bosses/boss-2.png" class="img-responsive boss" alt="alt">
+								</div>
+								<div ng-if="section2.activeBoss.id == 3">
+									<img src="resources/img/section-2/bosses/boss-3.png" class="img-responsive boss" alt="alt">
+								</div>
+							</div>
+							<div class="col-md-6">
 								<h3 class="section__subtitle">
 									<i class="symbol symbol--3"></i>
 									<span>Black Rook Hold</span>
@@ -117,21 +131,58 @@
 									<span>Encounters</span>
 								</h3>
 								<div class="labels">
-									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-1.png);"></div>
-									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-2.png);"></div>
-									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-3.png);"></div>
-									<div ng-click="shared.selectItem($event)" item class="labels__item" style="background-image: url(resources/img/section-2/label-4.png);"></div>
+									<div 
+										ng-click="section2.selectBoss($event, 0)" 
+										item 
+										class="labels__item js-is-selected" 
+										style="background-image: url(resources/img/section-2/label-1.png);">
+									</div>
+									<div 
+										ng-click="section2.selectBoss($event, 1)" 
+										item 
+										class="labels__item" 
+										style="background-image: url(resources/img/section-2/label-2.png);">
+									</div>
+									<div 
+										ng-click="section2.selectBoss($event, 2)" 
+										item 
+										class="labels__item" 
+										style="background-image: url(resources/img/section-2/label-3.png);">
+									</div>
+									<div 
+										ng-click="section2.selectBoss($event, 3)" 
+										item 
+										class="labels__item" 
+										style="background-image: url(resources/img/section-2/label-4.png);">
+									</div>
 								</div>
-								<p class="section__text">
-									<span class="selected-text">Illysanna Ravencrest</span> – The daughter of Lord Ravencrest, imprisoned for millennia in the Vault of the Wardens shortly after the War of Ancients, found herself free after Maiev released the demon hunters from their prison. Returning to her ancestral home, she has sacrificed everything - including her very soul - to defend what she could not during the War of the Ancients.
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
-								</p>
+								<div ng-if="section2.activeBoss.id === 0">
+									<p class="section__text">
+										<span class="selected-text">Illysanna Ravencrest</span> – The daughter of Lord Ravencrest, imprisoned for millennia in the Vault of the Wardens shortly after the War of Ancients, found herself free after Maiev released the demon hunters from their prison. Returning to her ancestral home, she has sacrificed everything - including her very soul - to defend what she could not during the War of the Ancients.
+									</p>
+								</div>
+								<div ng-if="section2.activeBoss.id === 1">
+									<p class="section__text">
+										<span class="selected-text">Illysanna Ravencrest #1</span> – Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim culpa itaque eius sit dolorum, ab voluptates. Vitae laboriosam, vel quam optio fugit neque eos tenetur, voluptas tempore suscipit debitis.
+									</p>
+								</div>
+								<div ng-if="section2.activeBoss.id === 2">
+									<p class="section__text">
+										<span class="selected-text">Illysanna Ravencrest #2</span> – Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim culpa itaque eius sit dolorum, ab voluptates. Vitae laboriosam, vel quam optio fugit neque eos tenetur, voluptas tempore suscipit debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat explicabo tenetur necessitatibus repellendus sed optio eum vitae quam veniam illo. Placeat quibusdam hic beatae nobis, illo itaque iste culpa saepe.
+									</p>
+								</div>
+								<div ng-if="section2.activeBoss.id === 3">
+									<p class="section__text">
+										<span class="selected-text">Illysanna Ravencrest #3</span> – Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim culpa itaque eius sit dolorum, ab voluptates. Vitae laboriosam, vel quam optio fugit neque eos tenetur, voluptas tempore suscipit debitis.
+									</p>
+								</div>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
 							</div>
 						</div>
 					</div>

@@ -13,6 +13,8 @@
 .wow-event__indicator-item,
 .wow-radio:not(checked) + label:before,
 .wow-tooltip,
+.header .top-panel,
+.header .logo,
 .section--1 .top-panel,
 .section--2 .top-panel,
 .section--2 .thumbnails,
@@ -39,6 +41,7 @@
 .wow-navigation__list-circle,
 .wow-pagination__list,
 .wow-pagination__item-link,
+.header .top-panel,
 .section--2 .thumbnails,
 .section--2 .thumbnails__item,
 .section--2 .labels,
@@ -693,6 +696,42 @@ a:focus {
     border-radius: 0 10px 10px 10px;
   }
 }
+.header {
+  position: relative;
+}
+.header .section__bg {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  min-height: 330px;
+  margin-top: -50px;
+  background-image: url("../resources/img/header/bg.png");
+}
+@media all and (min-width: 640px) {
+  .header .section__bg {
+    min-height: 490px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .header .section__bg {
+    min-height: 740px;
+  }
+}
+.header .top-panel {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  min-height: 120px;
+  background-image: url("../resources/img/header/top-panel.png");
+}
+.header .logo {
+  width: 123px;
+  height: 81px;
+  background-image: url("../resources/img/header/logo.png");
+}
 .section--1 {
   position: relative;
   z-index: 10;
@@ -715,6 +754,7 @@ a:focus {
   width: 100%;
   height: auto;
   min-height: 174px;
+  margin-top: -64px;
   background-image: url("../resources/img/section-1/top-panel.png");
 }
 .section--2 .top-panel {

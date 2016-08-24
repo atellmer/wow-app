@@ -1,0 +1,71 @@
+.wow-form
+	@extend .flex
+	flex-flow column wrap
+	justify-content space-between
+	padding 0 20px
+
+	input
+		width 100%
+		background-color rgba(0, 0, 0, 0.2)
+		border 1px solid #a2ff00
+		border-top 1px solid #65c101
+		border-bottom 1px solid #a2ff00
+		padding 12px
+		border-radius 3px
+		color #fff
+		text-align center
+		text-transform uppercase
+		font-size 1.4rem
+		font-family 'LatoLatinWebLight'
+		@media all and (min-width: $phone)
+			padding 18px
+			font-size 2rem
+		&:focus
+			outline none
+		&::-webkit-input-placeholder
+			color #595959
+			text-transform uppercase
+			text-align center
+			font-size 1.4rem
+			font-family 'LatoLatinWebLight'
+			@media all and (min-width: $phone)
+				font-size 2rem
+
+		&::-moz-placeholder
+			color #595959
+			text-transform uppercase
+			text-align center
+			font-size 1.4rem
+			font-family 'LatoLatinWebLight'
+			@media all and (min-width: $phone)
+				font-size 2rem
+
+		&:-moz-placeholder
+			color #595959
+			text-transform uppercase
+			text-align center
+			font-size 1.4rem
+			font-family 'LatoLatinWebLight'
+			@media all and (min-width: $phone)
+				font-size 2rem
+
+		&:-ms-input-placeholder
+			color #595959
+			text-transform uppercase
+			text-align center
+			font-size 1.4rem
+			font-family 'LatoLatinWebLight'
+			@media all and (min-width: $phone)
+				font-size 2rem
+
+	.wow-btn
+		padding 22px 69px
+		margin-top 30px
+
+		&:active
+			transform scale(0.98)
+			box-shadow 0 0 8px #b4ff00
+
+		span
+			position relative
+			top 2px

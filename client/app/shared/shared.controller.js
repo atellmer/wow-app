@@ -11,23 +11,12 @@
 	function SharedController() {
 		var vm = this;
 
-		vm.selectItem = selectItem;
 		vm.navigateTo = navigateTo;
 		
-
 		activate();
 
 		////////////////
 		function activate() { }
-
-		function selectItem(event) {
-			var target = event.target;
-
-			if (!target.hasAttribute('item')) { 
-				target = target.closest('[item]');
-			}
-			angular.element(target).toggleClass('js-is-selected');
-		}
 
 		function navigateTo(id) {
 			var top = $(id).offset().top;
